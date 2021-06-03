@@ -18,7 +18,7 @@ const NoteUser = props => {
       <FavoriteNote
         me={data.me}
         noteId={props.note.id}
-        isMilestone={props.note.isMilestone}
+        isFavorite={props.note.isFavorite}
       />
       <br />
       {data.me.id === props.note.author.id && (

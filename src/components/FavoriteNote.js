@@ -7,7 +7,7 @@ import { GET_MY_FAVORITES } from '../gql/query';
 
 const FavoriteNote = props => {
   // store the note's favorite count as state
-  const [count, setCount] = useState(props.isMilestone);
+  const [count, setCount] = useState(props.isFavorite);
   // store if the user has favorited the note as state
   const [favorited, setFavorited] = useState(
     // check if the note exists in the user favorites list
