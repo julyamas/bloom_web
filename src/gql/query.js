@@ -9,7 +9,7 @@ const GET_NOTES = gql`
         id
         createdAt
         content
-        favoriteCount
+        isMilestone
         author {
           username
           id
@@ -26,7 +26,7 @@ const GET_NOTE = gql`
       id
       createdAt
       content
-      favoriteCount
+      isMilestone
       author {
         username
         id
@@ -45,7 +45,7 @@ const GET_MY_NOTES = gql`
         id
         createdAt
         content
-        favoriteCount
+        isMilestone
         author {
           username
           id
@@ -65,7 +65,7 @@ const GET_MY_FAVORITES = gql`
         id
         createdAt
         content
-        favoriteCount
+        isMilestone
         author {
           username
           id

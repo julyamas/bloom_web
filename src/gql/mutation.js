@@ -6,7 +6,7 @@ const NEW_NOTE = gql`
       id
       content
       createdAt
-      favoriteCount
+      isMilestone
       favoritedBy {
         id
         username
@@ -25,7 +25,7 @@ const EDIT_NOTE = gql`
       id
       content
       createdAt
-      favoriteCount
+      isMilestone
       favoritedBy {
         id
         username
@@ -48,7 +48,7 @@ const TOGGLE_FAVORITE = gql`
   mutation toggleFavorite($id: ID!) {
     toggleFavorite(id: $id) {
       id
-      favoriteCount
+      isMilestone
     }
   }
 `;

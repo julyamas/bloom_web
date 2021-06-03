@@ -58,7 +58,7 @@ const Note = ({ note }) => {
           </UserActions>
         ) : (
           <UserActions>
-            <em>Favorites:</em> {note.favoriteCount}
+            <em>Favorites:</em> {note.isMilestone}
           </UserActions>
         )}
       </MetaData>
