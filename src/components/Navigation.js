@@ -49,26 +49,17 @@ const Navigation = () => {
       <NavList>
         <li>
           <Link to="/">
-            <span aria-hidden="true" role="img">
-              🏠
-            </span>
             Home
           </Link>
         </li>
         <li>
           <Link to="/mynotes">
-            <span aria-hidden="true" role="img">
-              📓
-            </span>
             My Notes
           </Link>
         </li>
         
         <li>
           <Link to="/new">
-            <span aria-hidden="true" role="img">
-              ➕
-            </span>
             New
           </Link>
         </li>

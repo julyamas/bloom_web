@@ -38,6 +38,25 @@ const EDIT_NOTE = gql`
   }
 `;
 
+const STOP_NOTE = gql`
+  mutation stopNote($id: ID!, $content: String!) {
+    stopNote(id: $id, content: $content) {
+      id
+      content
+      createdAt
+      isFavorite
+      favoritedBy {
+        id
+        username
+      }
+      author {
+        username
+        id
+      }
+    }
+  }
+`;
+
 const DELETE_NOTE = gql`
   mutation deleteNote($id: ID!) {
     deleteNote(id: $id)

@@ -29,7 +29,6 @@ const Pages = () => {
       <Layout>
         <Route exact path="/" component={Home} />
         <PrivateRoute path="/mynotes" component={MyNotes} />
-        
         <Route path="/note/:id" component={Note} />
         <Route path="/signup" component={SignUp} />
         <Route path="/signin" component={SignIn} />

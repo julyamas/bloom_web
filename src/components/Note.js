@@ -42,15 +42,8 @@ const Note = ({ note }) => {
     <StyledNote>
       <MetaData>
         <MetaInfo>
-          <img
-            src={note.author.avatar}
-            alt={`${note.author.username} avatar`}
-            height="50px"
-          />
-        </MetaInfo>
-        <MetaInfo>
           <em>by</em> {note.author.username} <br />
-          {format(note.createdAt, 'MMM Do YYYY')}
+          {format(note.createdAt, 'MMM Do YYYY - hh:mm a')}
         </MetaInfo>
         {data.isLoggedIn ? (
           <UserActions>
