@@ -87,6 +87,7 @@ const SIGNUP_USER = gql`
 export {
   NEW_NOTE,
   EDIT_NOTE,
+  STOP_NOTE,
   DELETE_NOTE,
   TOGGLE_FAVORITE,
   SIGNIN_USER,
